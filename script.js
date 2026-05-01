@@ -223,14 +223,15 @@ function startTypewriter() {
     const messageContent = document.querySelector('.message-content');
     if (!messageContent) return;
     
-    const fullMessage = `Hi, Aqila
+    const fullMessage = `Hi, Ruby
 
-Happy Birthday!
+Selamat ulang tahun ya, Ruby 
+Semoga hidup kamu selalu kuat, sekuat kamu selama ini yang nggak pernah banyak cerita tapi tetap jalanin semuanya.
 
-Semoga di umur yang sekarang, hidup km makin tenang, makin jelas arahnya, dan semua yang km harapin bisa pelan-pelan tercapai. gua doain yang terbaik buat km, serius.makasih ya, dulu km pernah ada di hidup gua dan bikin semuanya kerasa beda. km pernah bikin hari-hari gua jadi lebih hidup, lebih berwarna, dan itu ga bakal gua lupain. walaupun sekarang kita udah ga di posisi yang sama lagi, semua yang pernah kita lewatin tetep punya arti buat gua.kalau selama ini gua banyak salah, banyak kurang, atau pernah nyakitin km, gua minta maaf. mungkin gua belum bisa jadi orang yang km butuhin waktu itu, dan itu bakal jadi pelajaran buat gua ke depannya.
+Aku mungkin nggak selalu ada di setiap hari kamu, tapi aku selalu doain hal-hal baik buat kamu.
+Semoga capekmu diganti bahagia, dan pelan-pelan semua yang kamu harapin bisa jadi nyata.
 
-Semoga ke depan hidup km jauh lebih baik, ketemu orang yang lebih tepat, dan dapet kebahagiaan yang lebih dari sebelumnya. km pantas buat itu.dan untuk sekarang, kayaknya kita emang harus bener-bener jalan masing-masing. gua lagi pengen fokus buat benerin diri gua sendiri, jadi gua harap kita ga usah saling chat dulu ya. bukan karena benci, tapi karena emang ini yang terbaik.makasih buat semuanya. jaga diri km baik-baik.
-
+Terima kasih ya… udah jadi salah satu alasan kenapa hari-hari terasa lebih beda.
 I love you so much! 💕`;
     
     // Clear content and start fresh
@@ -266,7 +267,12 @@ function skipTypewriter() {
         clearInterval(typewriterInterval);
         const messageContent = document.querySelector('.message-content');
         if (messageContent) {
-            const fullMessage = `Hi Aqila,,<br><br>Happy Birthday!<br><br>Semoga di umur yang sekarang, hidup km makin tenang, makin jelas arahnya, dan semua yang km harapin bisa pelan-pelan tercapai. gua doain yang terbaik buat km, serius.makasih ya, dulu lu pernah ada di hidup gua dan bikin semuanya kerasa beda. km pernah bikin hari-hari gua jadi lebih hidup, lebih berwarna, dan itu ga bakal gua lupain. walaupun sekarang kita udah ga di posisi yang sama lagi, semua yang pernah kita lewatin tetep punya arti buat gua.kalau selama ini gua banyak salah, banyak kurang, atau pernah nyakitin km, gua minta maaf. mungkin gua belum bisa jadi orang yang km butuhin waktu itu, dan itu bakal jadi pelajaran buat gua ke depannya.<br><br>Semoga ke depan hidup km jauh lebih baik, ketemu orang yang lebih tepat, dan dapet kebahagiaan yang lebih dari sebelumnya. km pantas buat itu.dan untuk sekarang, kayaknya kita emang harus bener-bener jalan masing-masing. gua lagi pengen fokus buat benerin diri gua sendiri, jadi gua harap kita ga usah saling chat dulu ya. bukan karena benci, tapi karena emang ini yang terbaik.makasih buat semuanya. jaga diri km baik-baik..<br><br>I love you so much! 💕`;
+            const fullMessage = `Hi Ruby,,<br><br>Selamat ulang tahun ya, Ruby<br><br>Semoga hidup kamu selalu kuat, sekuat kamu selama ini yang nggak pernah banyak cerita tapi tetap jalanin semuanya.
+
+Aku mungkin nggak selalu ada di setiap hari kamu, tapi aku selalu doain hal-hal baik buat kamu.
+Semoga capekmu diganti bahagia, dan pelan-pelan semua yang kamu harapin bisa jadi nyata.
+
+Terima kasih ya… udah jadi salah satu alasan kenapa hari-hari terasa lebih beda.<br><br>I love you so much! 💕`;
             messageContent.innerHTML = fullMessage;
             isTyping = false;
             messageContent.scrollTop = messageContent.scrollHeight;
